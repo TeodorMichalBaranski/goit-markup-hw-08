@@ -76,12 +76,27 @@ body {
   color: var(--brand-black);
   text-decoration: none;
 }
+.link::after {
+  display: flex;
+  justify-content: center;
+  content: "";
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  background-size: contain;
+  background-color: var(--brand-blue);
+  margin-top: 30px;
+  position: absolute;
+}
+.link:hover::after {
+  display: flex;
+  color: var(--brand-blue);
+}
 .web-studio-header {
   text-decoration: none;
   margin-right: 93px;
   width: 145px;
-
-  /* padding-top: 24px; */
+ /* padding-top: 24px; */
 }
 
 .tell-mailto {
@@ -97,6 +112,8 @@ body {
 .link:hover,
 .link:focus {
   color: var(--brand-blue);
+  transition-duration: 250ms; 
+  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .gap-between-header {
