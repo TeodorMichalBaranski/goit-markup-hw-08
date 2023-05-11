@@ -267,6 +267,26 @@ body {
   text-align: center;
   justify-content: center;
 }
+.position {
+  position: relative;
+}
+.position-child {
+  position: absolute;
+  top: 224px;
+}
+.photo-description {
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 370px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* NASZ ZESPOL */
 
@@ -394,7 +414,6 @@ body {
 }
 .portfolio-boxshadow:hover,
 .portfolio-boxshadow:focus {
-  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -403,16 +422,16 @@ body {
 }
 .portfolio-card-position {
   position: relative;
-  /* width: 100%;
-  height: 100%; */
   width: 370px;
   height: 294px;
-  /* object-fit: cover; */
   overflow: hidden;
 }
 .portfolio-cardtransform {
   position: absolute;
-  top: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   width: 370px;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
@@ -425,7 +444,7 @@ body {
   transform: translateY(100%);
 }
 
-.portfolio-card-position:hover .portfolio-cardtransform {
+.portfolio-boxshadow:hover .portfolio-cardtransform {
   transform: translateY(0);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
