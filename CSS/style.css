@@ -403,13 +403,33 @@ body {
 }
 .portfolio-card-position {
   position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  /* width: 100%;
+  height: 100%; */
+  width: 370px;
+  height: 294px;
+  /* object-fit: cover; */
   overflow: hidden;
 }
+.portfolio-cardtransform {
+  position: absolute;
+  top: 0px;
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 49px 45px 49px 24px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03rem;
+  color: rgb(255, 255, 255);
+  transform: translateY(100%);
+}
 
-
+.portfolio-card-position:hover .portfolio-cardtransform {
+  transform: translateY(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* -> FOTO DESCRIPTION*/
 
 .picturesp-flex {
