@@ -407,6 +407,7 @@ body {
 }
 .company-icon {
   fill: var(--brand-lightgrey);
+  /* transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .company-icon:focus,
 .company-icon:hover {
@@ -414,8 +415,7 @@ body {
   cursor: pointer;
   background-color: var(--brand-blue);
   border-radius: 50%;
-  transition-duration: 250ms; 
-  cubic-bezier(0.4, 0, 0.2, 1) ;
+  /* transition: 2500ms; */
 }
 
 /* NASI KLIENCI */
@@ -427,27 +427,28 @@ body {
 .our-clients-border {
   border: 1px solid var(--brand-lightgrey);
   border-radius: 4px;
+  fill: var(--brand-blue)
+  transition: fill 5050ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-clients-border:hover,
 .our-clients-border:focus {
   border-color: var(--brand-blue);
+  fill: var(--brand-blue)
   cursor: pointer;
-  transition-duration: 250ms; 
-  cubic-bezier(0.4, 0, 0.2, 1) ;
+  
 }
 .company-icons {
   fill: var(--brand-lightgrey);
   margin: 0;
   padding: 0;
   vertical-align: middle;
+  transition: fill 5050ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-icons:hover,
 .company-icons:focus {
   cursor: pointer;
   fill: var(--brand-blue);
-  transition-duration: 250ms; 
-  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 /* Portfolio */
@@ -639,11 +640,15 @@ body {
   fill: var(--just-white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  /* transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2500ms; */
+  transition: fill 5050ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-icon-footer:hover,
 .company-icon-footer:focus {
   background-color: var(--brand-blue);
   cursor: pointer;
-  transition-duration: 250ms; 
-  cubic-bezier(0.4, 0, 0.2, 1) ;
+  border-radius: 50%;
+  fill: rgb(255, 255, 255);
 }
