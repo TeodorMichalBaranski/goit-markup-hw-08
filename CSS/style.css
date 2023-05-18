@@ -75,14 +75,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--brand-black);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-agency{
+.link-agency {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--brand-black);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-agency::after {
   display: flex;
@@ -104,7 +106,7 @@ body {
   text-decoration: none;
   margin-right: 93px;
   width: 145px;
- /* padding-top: 24px; */
+  /* padding-top: 24px; */
 }
 
 .tell-mailto {
@@ -114,6 +116,7 @@ body {
   line-height: 1.1;
   color: var(--brand-grey);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-agency:hover,
 .link-agency:focus,
@@ -122,8 +125,6 @@ body {
 .link:hover,
 .link:focus {
   color: var(--brand-blue);
-  transition-duration: 250ms; 
-  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .gap-between-header {
@@ -133,12 +134,11 @@ body {
 .icon-header {
   fill: var(--brand-grey);
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-header:hover,
 .icon-header:focus {
   fill: var(--brand-blue);
-  transition-duration: 250ms; 
-  cubic-bezier(0.4, 0, 0.2, 1) ;
   cursor: pointer;
 }
 
@@ -202,6 +202,7 @@ body {
   margin-top: 30px;
   padding: 10px 40px;
 }
+/* OKNO MODALNE */
 
 .backdrop {
   position: fixed;
@@ -216,7 +217,8 @@ body {
   align-items: center;
   opacity: 1;
   transform: scale(1);
-  transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1), opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -229,27 +231,13 @@ body {
 .modal {
   width: 528px;
   height: 581px;
- position: relative;
+  position: relative;
   cursor: initial;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
-/* .modal {
-  width: 528px;
-  height: 581px;
- position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate (-50%, -50%);
-  cursor: initial;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-} */
 
 .modal-close {
   width: 30px;
@@ -273,7 +261,6 @@ body {
   cursor: pointer;
   background-color: lightgrey;
 }
-
 
 /*  LOREM IPSUM */
 
@@ -407,7 +394,9 @@ body {
 }
 .company-icon {
   fill: var(--brand-lightgrey);
-  /* transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-icon:focus,
 .company-icon:hover {
@@ -415,7 +404,6 @@ body {
   cursor: pointer;
   background-color: var(--brand-blue);
   border-radius: 50%;
-  /* transition: 2500ms; */
 }
 
 /* NASI KLIENCI */
@@ -427,22 +415,21 @@ body {
 .our-clients-border {
   border: 1px solid var(--brand-lightgrey);
   border-radius: 4px;
-  fill: var(--brand-blue)
-  transition: fill 5050ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--brand-blue);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-clients-border:hover,
 .our-clients-border:focus {
   border-color: var(--brand-blue);
-  fill: var(--brand-blue)
+  fill: var(--brand-blue);
   cursor: pointer;
-  
 }
 .company-icons {
   fill: var(--brand-lightgrey);
   margin: 0;
   padding: 0;
   vertical-align: middle;
-  transition: fill 5050ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-icons:hover,
@@ -473,8 +460,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
   cursor: pointer;
-  /* background: #f5f4fa; */
-  /* border-radius: 4px; */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttonp:hover,
 .buttonp:focus {
@@ -482,16 +470,16 @@ body {
   color: var(--just-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition-duration: 250ms; 
-  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
+.portfolio-boxshadow {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-boxshadow:hover,
 .portfolio-boxshadow:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms; 
-  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .portfolio-card-position {
   position: relative;
@@ -517,7 +505,6 @@ body {
   transform: translateY(100%);
   margin-top: 0px;
 }
-
 
 .portfolio-boxshadow:hover .portfolio-cardtransform {
   transform: translateY(0);
@@ -590,13 +577,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address:hover,
 .address:focus {
   color: var(--brand-blue);
-  transition-duration: 250ms; 
-  cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .color-gradient {
   color: rgba(255, 255, 255, 0.6);
@@ -640,10 +626,8 @@ body {
   fill: var(--just-white);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  /* transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 2500ms; */
-  transition: fill 5050ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-icon-footer:hover,
 .company-icon-footer:focus {
