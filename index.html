@@ -458,6 +458,25 @@
                 ></use>
               </svg>
             </div>
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+          <div class="box-3">
+            <h2 class="join-uss margin20">ZAPISZ SIE DO NEWSLETTERA</h2>
+            <form class="newsletter-wrapper">
+              <input
+                type="email"
+                name="newsletter-email"
+                placeholder="E-mail"
+                class="newsletter-input"
+              />
+              <button type="submit" class="newsletter-button">
+                Zapisz się
+                <svg width="24px" height="24px" class="send-svg">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -465,6 +484,88 @@
     <div class="is-hidden backdrop" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close>&times;</button>
+        <div>
+          <header class="modal-title">
+            Zostaw swoje dane w formularzu poniżej
+          </header>
+          <form name="personal_data_form" autocomplete="on" class="form-window">
+            <div role="group" aria-labelledby="user_data">
+              <div class="input-spacing">
+                <label for="user_name" class="label">Imie</label>
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    id="user_name"
+                    name="user_name"
+                    class="input-text-box"
+                    required
+                  />
+                  <svg width="20px" height="20px" class="modal-icons">
+                    <use href="./images/icons.svg#icon-person-modal"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="input-spacing">
+                <label for="phone_number" class="label">Telefon</label>
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    id="phone_number"
+                    name="phone_number"
+                    class="input-text-box"
+                    title="Wprowadź numer w foracie 111-111-111"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                    required
+                  />
+                  <svg width="20px" height="20px" class="modal-icons">
+                    <use href="./images/icons.svg#icon-phone-modal"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="input-spacing">
+                <label for="email" class="label">Email</label>
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    class="input-text-box"
+                    required
+                  />
+                  <svg width="20px" height="20px" class="modal-icons">
+                    <use href="./images/icons.svg#icon-email-modal"></use>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <label for="feedback" class="label">Komentarz</label>
+                <textarea
+                  id="feedback"
+                  name="feedback"
+                  placeholder="Wprowadź tekst"
+                  rows="5"
+                  class="feedback"
+                ></textarea>
+              </div>
+              <div class="policy-checkbox">
+                <label id="policy" class="policy">
+                  <svg width="17px" height="16px" class="check-icon">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                  <input type="checkbox" for="policy" value="policy" required />
+                  <div>
+                    Oświadczam iż akceptuję
+                    <a href="" class="modal-links"> Regulamin</a> i
+                    <a href="" class="modal-links"> Politykę Prywatności</a>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="button-wrapper">
+              <button type="submit" class="form-button">Wyślij</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
