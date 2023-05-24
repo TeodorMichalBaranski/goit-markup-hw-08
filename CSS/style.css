@@ -405,6 +405,7 @@ body {
   transform: translateX(50%);
   transform: scale(0);
   transition: 200ms;
+  /* cursor: pointer; */
 }
 
 .policy input:checked {
