@@ -23,33 +23,36 @@
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
-    <header class="top-background">
+    <header class="navigation-background">
       <section class="container">
-        <div class="header-flex">
-          <a class="web-studio-header" href="">
-            <span class="web">Web</span><span class="studio">Studio</span></a
+        <div class="navigation">
+          <a class="logo" href="">
+            <span class="logo__web">Web</span
+            ><span class="logo__studio">Studio</span></a
           >
-          <nav class="header-nav-flex">
-            <a class="link" href="./index.html">Agencja</a>
-            <a class="link-agency" href="./portfolio.html">Portfolio</a>
-            <a class="link" href="">Kontakt</a>
+          <nav class="navigation__links">
+            <a class="navigation__item" href="./index.html">Agencja</a>
+            <a class="navigation__item-bar" href="./portfolio.html"
+              >Portfolio</a
+            >
+            <a class="navigation__item" href="">Kontakt</a>
           </nav>
-          <ul class="site-nav">
+
+          <ul class="navigation__contact">
             <li>
               <a
-                class="mailto gap-between-header-r"
+                class="navigation__item-contact navigation__item-contact--mr"
                 href="mailto:info@devstudio.com"
               >
-                <svg class="icon-header" width="16" height="12">
+                <svg class="navigation__icon-contact" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-
             <li>
-              <a class="mailto" href="tel:+48111111111">
-                <svg class="icon-header" width="10" height="16">
+              <a class="navigation__item-contact" href="tel:+48111111111">
+                <svg class="navigation__icon-contact" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +48 111 111 111</a
@@ -64,19 +67,39 @@
       <!-- section buttons -->
       <section class="section section-padd-bottom-50">
         <div class="container">
-          <ul class="buttonpflex">
-            <li><button type="button" class="buttonp">Wszystkie</button></li>
-            <li><button type="button" class="buttonp">Strony</button></li>
-            <li><button type="button" class="buttonp">Aplikacje</button></li>
-            <li><button type="button" class="buttonp">Dizajn</button></li>
-            <li><button type="button" class="buttonp">Marketing</button></li>
+          <ul class="portfolio-buttons">
+            <li>
+              <button type="button" class="portfolio-buttons__item">
+                Wszystkie
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-buttons__item">
+                Strony
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-buttons__item">
+                Aplikacje
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-buttons__item">
+                Dizajn
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-buttons__item">
+                Marketing
+              </button>
+            </li>
           </ul>
         </div>
       </section>
 
       <!-- Section pictures -->
 
-      <section class="section section-new">
+      <section class="section section__portfolio">
         <div class="container">
           <ul class="picturesp-flex">
             <li class="portfolio-boxshadow" tabindex="0">
@@ -267,29 +290,31 @@
     </main>
     <footer class="footer-background">
       <div class="container">
-        <div class="footer2">
-          <div class="footer">
-            <a class="web-studio-footer" href="">
-              <span class="web">Web</span
-              ><span class="studio-white">Studio</span></a
+        <div class="footer">
+          <div class="footer__contacts">
+            <a class="logo" href="">
+              <span class="logo__web">Web</span
+              ><span class="logo__studio logo__studio--white">Studio</span></a
             >
-            <address class="address">
+            <address class="footer__wrapper">
               m. Warszawa Aleje Jerozolimskie 21 <br />
               <a
-                class="color-gradient tell-mailto"
+                class="footer__address-color footer__address"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
-              <a class="color-gradient tell-mailto" href="tel:+48111111111"
+              <a
+                class="footer__address-color footer__address"
+                href="tel:+48111111111"
                 >+48 111 111 111</a
               >
             </address>
           </div>
-          <div class="join-us">
-            <p class="join-us-text">dołącz do nas</p>
+          <div class="footer__social">
+            <p class="footer__header">dołącz do nas</p>
             <div class="footer-icon">
               <svg
-                class="company-icon-footer"
+                class="footer-icon__item"
                 width="44"
                 height="44"
                 tabindex="0"
@@ -301,7 +326,7 @@
                 ></use>
               </svg>
               <svg
-                class="company-icon-footer"
+                class="footer-icon__item"
                 width="44"
                 height="44"
                 tabindex="0"
@@ -313,7 +338,7 @@
                 ></use>
               </svg>
               <svg
-                class="company-icon-footer"
+                class="footer-icon__item"
                 width="44"
                 height="44"
                 tabindex="0"
@@ -325,7 +350,7 @@
                 ></use>
               </svg>
               <svg
-                class="company-icon-footer"
+                class="footer-icon__item"
                 width="44"
                 height="44"
                 tabindex="0"
@@ -340,18 +365,22 @@
             <!-- </div> -->
             <!-- </div> -->
           </div>
-          <div class="box-3">
-            <h2 class="join-uss margin20">ZAPISZ SIE DO NEWSLETTERA</h2>
-            <form class="newsletter-wrapper">
+          <div class="footer__newsletter">
+            <h2 class="footer__newsletter-header">ZAPISZ SIE DO NEWSLETTERA</h2>
+            <form class="newsletter">
               <input
                 type="email"
                 name="newsletter-email"
                 placeholder="E-mail"
-                class="newsletter-input"
+                class="newsletter__input"
               />
-              <button type="submit" class="newsletter-button">
+              <button type="submit" class="newsletter__button">
                 Zapisz się
-                <svg width="24px" height="24px" class="send-svg">
+                <svg
+                  width="24px"
+                  height="24px"
+                  class="newsletter__button--color"
+                >
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
