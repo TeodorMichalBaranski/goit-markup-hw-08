@@ -598,7 +598,98 @@
         </div>
       </div>
     </footer>
+
     <div class="is-hidden backdrop" data-modal>
+      <div class="modal">
+        <button class="modal__close" data-modal-close>&times;</button>
+        <div>
+          <header class="modal-title">
+            Zostaw swoje dane w formularzu poniżej
+          </header>
+          <form name="personal_data_form" autocomplete="on" class="modal__form">
+            <div role="group" aria-labelledby="user_data">
+              <div class="modal__form--spacing">
+                <label for="user_name" class="modal__label">Imie</label>
+                <div class="modal__wrapper">
+                  <input
+                    type="text"
+                    id="user_name"
+                    name="user_name"
+                    class="modal__input"
+                    required
+                  />
+                  <svg " class="modal-icons modal-icons-men">
+                    <use href="./images/icons.svg#icon-person-modal"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="modal__form--spacing">
+                <label for="phone_number" class="modal__label">Telefon</label>
+                <div class="modal__wrapper">
+                  <input
+                    type="text"
+                    id="phone_number"
+                    name="phone_number"
+                    class="modal__input"
+                    title="Wprowadź numer w foracie 111-111-111"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                    required
+                  />
+                  <svg  class="modal-icons">
+                    <use href="./images/icons.svg#icon-phone-modal"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="modal__form--spacing">
+                <label for="email" class="modal__label">Email</label>
+                <div class="modal__wrapper">
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    class="modal__input"
+                    required
+                  />
+                  <svg  class="modal-icons">
+                    <use href="./images/icons.svg#icon-email-modal"></use>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <label for="feedback" class="modal__label">Komentarz</label>
+                <textarea
+                  id="feedback"
+                  name="feedback"
+                  placeholder="Wprowadź tekst"
+                  rows="5"
+                  class="modal__textarea"
+                ></textarea>
+              </div>
+              <div class="modal-checkbox">
+                <label id="policy" class="modal-checkbox__label">
+                  <svg width="17px" height="16px" class="checkbox-icon">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                  <input type="checkbox" for="policy" value="policy" required />
+                  <div>
+                    Oświadczam iż akceptuję
+                    <a href="" class="modal-checkbox__links"> Regulamin</a> i
+                    <a href="" class="modal-checkbox__links">
+                      Politykę Prywatności</a
+                    >
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="modal__submit">
+              <button type="submit" class="modal__submit-button">Wyślij</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="is-hidden backdrop" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close>&times;</button>
         <div>
@@ -684,7 +775,7 @@
           </form>
         </div>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
