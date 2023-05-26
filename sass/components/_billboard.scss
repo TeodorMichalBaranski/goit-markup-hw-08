@@ -1,0 +1,52 @@
+.wrapper-billboard {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+  align-self: center;
+  align-items: center;
+}
+
+.billboard {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/picture-background.jpg");
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2f303a;
+}
+.billboard__box {
+  /* max-height: 600px; */
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+.billboard__header {
+  /* display: block; */
+  color: var(--just-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  max-width: 696px;
+}
+
+.billboard__button {
+  font-family: roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* align-items: center; */
+  text-align: center;
+  color: var(--just-white);
+  background: var(--brand-blue);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 10px 40px;
+}

@@ -1,0 +1,31 @@
+.loremipsum {
+  display: flex;
+  justify-content: center;
+  align-self: auto;
+  gap: 30px;
+  /* width: 100%; */
+}
+
+.loremipsum__heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: var(--brand-black);
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 14px;
+}
+.loremipsum__content {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--brand-grey);
+  text-align: left;
+}
+
+.loremipsum__icon {
+  margin-bottom: 30px;
+  background-color: var(--brand-grey-white);
+  border-radius: 4px;
+}
