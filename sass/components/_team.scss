@@ -1,5 +1,5 @@
 .section--ot-backgroundcolor {
-  background-color: var(--brand-grey-white);
+  background-color: $brand-grey-white;
 }
 
 .team {
@@ -42,7 +42,7 @@
   gap: 10px;
 }
 .icon-social__item {
-  fill: var(--brand-lightgrey);
+  fill: $brand-lightgrey;
   border-radius: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -50,7 +50,7 @@
 }
 .icon-social__item:focus,
 .icon-social__item:hover {
-  fill: var(--just-white);
+  fill: $just-white;
   cursor: pointer;
-  background-color: var(--brand-blue);
+  background-color: $brand-blue;
 }

@@ -26,7 +26,7 @@
 }
 .billboard__header {
   /* display: block; */
-  color: var(--just-white);
+  color: $just-white;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -42,8 +42,8 @@
   line-height: 1.88;
   /* align-items: center; */
   text-align: center;
-  color: var(--just-white);
-  background: var(--brand-blue);
+  color: $just-white;
+  background: $brand-blue;
   border: none;
   border-radius: 4px;
   cursor: pointer;

@@ -3,19 +3,19 @@
   gap: 30px;
 }
 .company__list {
-  border: 1px solid var(--brand-lightgrey);
+  border: 1px solid $brand-lightgrey;
   border-radius: 4px;
-  fill: var(--brand-blue);
+  fill: $brand-blue;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company__list:hover,
 .company__list:focus {
-  border-color: var(--brand-blue);
-  fill: var(--brand-blue);
+  border-color: $brand-blue;
+  fill: $brand-blue;
   cursor: pointer;
 }
 .company__icons {
-  fill: var(--brand-lightgrey);
+  fill: $brand-lightgrey;
   margin: 0;
   padding: 0;
   vertical-align: middle;
@@ -25,5 +25,5 @@
 .company__icons:hover,
 .company__icons:focus {
   cursor: pointer;
-  fill: var(--brand-blue);
+  fill: $brand-blue;
 }

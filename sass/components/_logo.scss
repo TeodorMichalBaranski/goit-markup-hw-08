@@ -10,7 +10,7 @@
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--brand-blue);
+  color: $brand-blue;
   text-decoration: none;
 }
 .logo__studio {
@@ -19,7 +19,7 @@
   letter-spacing: 0.03em;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--just-black);
+  color: $just-black;
   text-decoration: none;
 }
 
@@ -29,6 +29,6 @@
   letter-spacing: 0.03em;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--just-white);
+  color: $just-white;
   text-decoration: none;
 }

@@ -1,7 +1,7 @@
 .modal__submit-button:hover,
 .modal__submit-button:focus {
   background-color: rgb(245, 244, 250);
-  color: var(--brand-black);
+  color: $brand-black;
   cursor: pointer;
 }
 
@@ -52,7 +52,7 @@
   align-items: center;
   font-size: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--white);
+  background-color: $just-white;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -76,7 +76,7 @@
   font-weight: 400;
   line-height: 0.875rem;
   letter-spacing: 0.01em;
-  color: var(--brand-grey);
+  color: $brand-grey;
   margin-bottom: 4px;
 }
 
@@ -161,7 +161,7 @@
 
 .modal-checkbox__links {
   text-decoration: underline;
-  color: var(--brand-blue);
+  color: $brand-blue;
 }
 
 .modal__submit-button {
@@ -213,15 +213,15 @@
 .newsletter__input:hover,
 .modal__textarea:hover,
 .modal__textarea:focus {
-  border-color: var(--brand-blue);
+  border-color: $brand-blue;
 }
 
 .modal__input:hover + .modal-icons {
-  fill: var(--brand-blue);
+  fill: $brand-blue;
 }
 
 .modal__input:focus + .modal-icons {
-  fill: var(--brand-blue);
+  fill: $brand-blue;
 }
 .modal__input:hover,
 .modal__input:focus {
