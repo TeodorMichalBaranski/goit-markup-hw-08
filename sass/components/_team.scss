@@ -1,6 +1,11 @@
 .section--ot-backgroundcolor {
   background-color: $brand-grey-white;
 }
+.team {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
 
 .team {
   display: flex;
@@ -53,4 +58,35 @@
   fill: $just-white;
   cursor: pointer;
   background-color: $brand-blue;
+}
+// .section-heading {
+//   font-size: 36px;
+//   font-weight: 700;
+//   line-height: 1.2;
+//   letter-spacing: 0.03em;
+//   color: var(--brand-black);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 0 50px 0;
+//   text-align: center;
+// }
+@media (min-width: $tablet-size) {
+  .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .team__picture {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: $desktop-size) {
+  .team-background {
+    padding: 94px 0;
+  }
+  .team {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }

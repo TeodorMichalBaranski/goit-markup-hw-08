@@ -25,12 +25,26 @@
 
   <body>
     <header class="navigation-background">
-      <section class="container">
-        <div class="navigation">
+      <section class="container navigation">
+        <div class="navigation__wrapper">
           <a class="logo" href="">
             <span class="logo__web">Web</span
             ><span class="logo__studio">Studio</span></a
           >
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40px" height="40px" class="mobile__icon-menu">
+              <use
+                href="./images/icons.svg#menu-button"
+                height="16px"
+                y="12"
+              ></use>
+            </svg>
+          </button>
+
           <nav class="navigation__links">
             <a class="navigation__item-bar" href="./index.html">Agencja</a>
             <a class="navigation__item" href="./portfolio.html">Portfolio</a>
@@ -38,7 +52,7 @@
           </nav>
 
           <ul class="navigation__contact">
-            <li>
+            <li class="navigation_wrapper">
               <a
                 class="navigation__item-contact navigation__item-contact--mr"
                 href="mailto:info@devstudio.com"
@@ -49,7 +63,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="navigation__wrapper">
               <a class="navigation__item-contact" href="tel:+48111111111">
                 <svg class="navigation__icon-contact" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
@@ -61,19 +75,15 @@
         </div>
       </section>
     </header>
-
+    <!-- class="wrapper-billboard" -->
     <main>
-      <section class="wrapper-billboard">
-        <div class="billboard">
-          <div class="billboard__box">
-            <h1 class="billboard__header">
-              EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
-            </h1>
-            <button data-modal-open class="billboard__button" type="button">
-              Zamów usługę
-            </button>
-          </div>
-        </div>
+      <section class="billboard">
+        <h1 class="billboard__header">
+          EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+        </h1>
+        <button data-modal-open class="billboard__button" type="button">
+          Zamów usługę
+        </button>
       </section>
 
       <section class="section">
@@ -148,7 +158,7 @@
       </section>
 
       <section class="section section-pddg">
-        <h2 class="section-heading">Czym się zajmujemy</h2>
+        <h2 class="section-heading services-no-heading">Czym się zajmujemy</h2>
         <div class="container">
           <ul class="service">
             <li class="service__item">
@@ -194,10 +204,18 @@
           <ul class="team">
             <li class="team__picture">
               <img
-                src="images/img04.jpg"
+                srcset="
+                  images/team/productDesigner_mobile.jpg     450w,
+                  images/team/productDesigner_mobile@2x.jpg  900w,
+                  images/team/productDesigner_tablet.jpg     354w,
+                  images/team/productDesigner_tablet@2x.jpg  708w,
+                  images/team/productDesigner_desktop.jpg    270w,
+                  images/team/productDesigner_desktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 678px) 354px, 100vw"
+                src="images/team/productDesigner_mobile.jpg"
                 alt="John Doe nr1"
-                width="270"
-                height="260"
+                width="100%"
               />
               <p class="team__person">John Doe</p>
               <p class="team__position">Product designer</p>
@@ -254,10 +272,18 @@
             </li>
             <li class="team__picture">
               <img
-                src="images/img05.jpg"
+                srcset="
+                  images/team/frontendDeveloper_mobile.jpg     450w,
+                  images/team/frontendDeveloper_mobile@2x.jpg  900w,
+                  images/team/frontendDeveloper_tablet.jpg     354w,
+                  images/team/frontendDeveloper_tablet@2x.jpg  708w,
+                  images/team/frontendDeveloper_desktop.jpg    270w,
+                  images/team/frontendDeveloper_desktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 678px) 354px, 100vw"
+                src="images/team/frontendDeveloper_mobile.jpg"
                 alt="John Doe nr2"
-                width="270"
-                height="260"
+                width="100%"
               />
               <p class="team__person">John Doe</p>
               <p class="team__position">Frontend developer</p>
@@ -314,10 +340,18 @@
             </li>
             <li class="team__picture">
               <img
-                src="images/img06.jpg"
+                srcset="
+                  images/team/marketing_mobile.jpg     450w,
+                  images/team/marketing_mobile@2x.jpg  900w,
+                  images/team/marketing_tablet.jpg     354w,
+                  images/team/marketing_tablet@2x.jpg  708w,
+                  images/team/marketing_desktop.jpg    270w,
+                  images/team/marketing_desktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 678px) 354px, 100vw"
+                src="images/team/marketing_mobile.jpg"
                 alt="John Doe nr2"
-                width="270"
-                height="260"
+                width=""
               />
               <p class="team__person">John Doe</p>
               <p class="team__position">Marketing</p>
@@ -374,10 +408,18 @@
             </li>
             <li class="team__picture">
               <img
-                src="images/img07.jpg"
+                srcset="
+                  images/team/UIdesigner_mobile.jpg     450w,
+                  images/team/UIdesigner_mobile@2x.jpg  900w,
+                  images/team/UIdesigner_tablet.jpg     354w,
+                  images/team/UIdesigner_tablet@2x.jpg  708w,
+                  images/team/UIdesigner_desktop.jpg    270w,
+                  images/team/UIdesigner_desktop@2x.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 678px) 354px, 100vw"
+                src="images/team/UIdesigner_mobile.jpg"
                 alt="John Doe nr2"
-                width="270"
-                height="260"
+                width="100%"
               />
               <p class="team__person">John Doe</p>
               <p class="team__position">UI designer</p>
@@ -689,5 +731,45 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+
+    <!-- MOBILE-MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="mobile__button-box">
+        <button class="menu-toggle js-close-menu">&times;</button>
+      </div>
+
+      <div class="mobile">
+        <div>
+          <ul class="mobile__links">
+            <li><a class="mobile__item" href="index.html">Agencja</a></li>
+            <li><a class="mobile__item" href="portfolio.html">Portfolio</a></li>
+            <li><a class="mobile__item" href="">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="mobile__contacts">
+            <a class="mobile__phone" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="mobile__email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+
+          <div>
+            <a class="mobile__social-links" href="">Instagram </a>
+            <a class="mobile__social-links" href="">Twitter</a>
+            <a class="mobile__social-links" href="">Facebook</a>
+            <a class="mobile__social-links" href="">Linkedin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
