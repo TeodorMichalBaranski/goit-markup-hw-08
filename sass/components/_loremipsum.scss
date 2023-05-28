@@ -1,9 +1,15 @@
+.section {
+  padding: 0;
+}
+
 .loremipsum {
   display: flex;
-  justify-content: center;
-  align-self: auto;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
-  /* width: 100%; */
+  margin-bottom: 60px;
+  // align-items: center;
+  // justify-content: center;
 }
 
 .loremipsum__heading {
@@ -15,6 +21,7 @@
   text-align: left;
   margin-top: 0px;
   margin-bottom: 14px;
+  text-align: center;
 }
 .loremipsum__content {
   font-size: 14px;
@@ -28,4 +35,30 @@
   margin-bottom: 30px;
   background-color: $brand-grey-white;
   border-radius: 4px;
+  // justify-content: center;
+  align-self: center;
 }
+
+@media (min-width: $tablet-size) {
+  .loremipsum {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .loremipsum {
+    margin-bottom: 94px;
+    flex-wrap: nowrap;
+  }
+}
+
+// .loremipsum {
+//   display: flex;
+//   justify-content: center;
+//   align-self: auto;
+//   gap: 30px;
+//   margin-bottom: 94px;
+//   flex-wrap: nowrap;
