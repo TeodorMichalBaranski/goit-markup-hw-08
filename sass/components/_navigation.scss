@@ -68,12 +68,31 @@
     }
 
     &__item {
-      font-size: 0.875rem;
+      font-size: 14px;
       font-weight: 500;
       line-height: 1.17;
       color: $brand-black;
       letter-spacing: 0.02em;
       text-decoration: none;
+    }
+
+    &__link--agency {
+      color: $hoverColor;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.1;
+      position: relative;
+    }
+
+    &--agency::after {
+      content: "";
+      background-color: $hoverColor;
+      width: 51px;
+      height: 4px;
+      border-radius: 2px;
+      position: absolute;
+      top: 44px;
+      display: block;
     }
 
     &__item--contact {
