@@ -1,81 +1,59 @@
-.section {
+.company {
   margin: 60px 0;
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__wrapper {
+    border-color: $brand-lightgrey;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+
+    flex-basis: calc((100% - 30px) / 2);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__wrapper:hover,
+  &__wrapper:focus {
+    border-color: $brand-blue;
+    transition: 250ms;
+  }
 }
 
-.company {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.company__list {
-  border: 1px solid $brand-lightgrey;
-  border-radius: 4px;
-  fill: $brand-blue;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  flex-basis: calc((100% - 30px) / 2);
-  display: flex;
-  justify-content: center;
-}
-.company__list:hover,
-.company__list:focus {
-  border-color: $brand-blue;
-  fill: $brand-blue;
-  cursor: pointer;
-}
-.company__icons {
+.icon__company {
   fill: $brand-lightgrey;
   margin: 0;
   padding: 0;
   vertical-align: middle;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.company__icons:hover,
-.company__icons:focus {
-  cursor: pointer;
-  fill: $brand-blue;
-}
-@media (min-width: $tablet-size) {
-  .company__list {
-    flex-basis: calc((100% - 30px) / 2);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $brand-blue;
+    transition: 250ms;
   }
 }
+
+@media (min-width: $tablet-size) {
+  .company {
+    &__wrapper {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .company {
-    flex-wrap: nowrap;
-  }
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin: 94px 0;
+
+    &__list {
+      flex-wrap: nowrap;
+    }
   }
 }
-// .company {
-//   display: flex;
-//   gap: 30px;
-// }
-// .company__list {
-//   border: 1px solid $brand-lightgrey;
-//   border-radius: 4px;
-//   fill: $brand-blue;
-//   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-// .company__list:hover,
-// .company__list:focus {
-//   border-color: $brand-blue;
-//   fill: $brand-blue;
-//   cursor: pointer;
-// }
-// .company__icons {
-//   fill: $brand-lightgrey;
-//   margin: 0;
-//   padding: 0;
-//   vertical-align: middle;
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// .company__icons:hover,
-// .company__icons:focus {
-//   cursor: pointer;
-//   fill: $brand-blue;
-// }

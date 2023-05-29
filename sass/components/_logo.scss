@@ -1,34 +1,22 @@
 .logo {
-  text-decoration: none;
-  margin-right: 93px;
-  width: 145px;
-  /* padding-top: 24px; */
-}
-.logo__web {
   font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: 1.625rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.17;
   letter-spacing: 0.03em;
-  color: $brand-blue;
-  text-decoration: none;
-}
-.logo__studio {
-  font-family: Raleway;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  line-height: 1.2;
-  color: $just-black;
-  text-decoration: none;
+  margin-right: 83px;
 }
 
-.logo__studio--white {
-  font-family: Raleway;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  line-height: 1.2;
-  color: $just-white;
-  text-decoration: none;
+.logo-web {
+  color: $brand-blue;
+}
+
+.logo-studio {
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: $desktop-size) {
+  .logo {
+    margin-right: 93px;
+  }
 }
