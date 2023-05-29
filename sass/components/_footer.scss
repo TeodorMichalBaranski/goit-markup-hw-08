@@ -125,7 +125,7 @@
   &__button:focus,
   &__button:hover {
     transition: 250ms;
-    background-color: rgb(245, 244, 250);
+    background-color: $brand-blue;
     color: $brand-black;
     cursor: pointer;
   }

@@ -77,7 +77,7 @@
     }
 
     &__link--agency {
-      color: $hoverColor;
+      color: $brand-blue;
       font-size: 14px;
       font-weight: 500;
       line-height: 1.1;
@@ -86,7 +86,7 @@
 
     &--agency::after {
       content: "";
-      background-color: $hoverColor;
+      background-color: $brand-blue;
       width: 51px;
       height: 4px;
       border-radius: 2px;
