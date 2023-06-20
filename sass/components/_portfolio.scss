@@ -64,7 +64,10 @@
     line-height: 28px;
     letter-spacing: 0.03rem;
     color: rgb(255, 255, 255);
-    transform: translateY(100%);
+    // transform: translateY(100%);
+    transform: translateY(0);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__description {
@@ -91,9 +94,9 @@
     margin: 4px 0 0 0;
   }
 
-  &__photo:hover .portfolio__text {
-    transform: translateY(0);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  // &__photo:hover .portfolio__text {
+  //   transform: translateY(0);
+  //   transition-duration: 250ms;
+  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // }
 }
