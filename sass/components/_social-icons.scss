@@ -6,6 +6,14 @@
 
   &__item {
     fill: $brand-lightgrey;
+    border-radius: 50%;
+    cursor: pointer;
+    // background-color: $brand-blue;
+    // border-radius: 50%;
+    // transition: 250ms;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__background {
@@ -14,10 +22,8 @@
 
   &__item:hover,
   &__item:focus {
-    cursor: pointer;
+    // cursor: pointer;
     fill: rgb(255, 255, 255);
     background-color: $brand-blue;
-    border-radius: 50%;
-    transition: 250ms;
   }
 }

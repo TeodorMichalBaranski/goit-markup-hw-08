@@ -76,24 +76,28 @@
       text-decoration: none;
     }
 
-    &__link--agency {
-      color: $brand-blue;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.1;
-      position: relative;
-    }
+    // &__link--agency {
+    //   color: $brand-blue;
+    //   font-size: 14px;
+    //   font-weight: 500;
+    //   line-height: 1.1;
+    //   position: relative;
+    // }
 
-    &--agency::after {
-      content: "";
-      background-color: $brand-blue;
-      width: 51px;
-      height: 4px;
-      border-radius: 2px;
-      position: absolute;
-      top: 44px;
-      display: block;
-    }
+    // &--agency::after {
+    //   content: "";
+    //   background-color: $brand-blue;
+    //   width: 51px;
+    //   height: 4px;
+    //   border-radius: 2px;
+    //   position: absolute;
+    //   top: 44px;
+    //   display: block;
+    // }
+    // &__agency:hover::after {
+    //   display: flex;
+    //   color: #2196f3;
+    // }
 
     &__item--contact {
       font-size: 14px;
@@ -125,7 +129,7 @@
     }
   }
 
-  .navigation-position {
+  .navigation__item--active {
     position: relative;
 
     &:hover::after,
@@ -212,7 +216,7 @@
     }
   }
 
-  .navigation-position {
+  .navigation__item--active {
     position: relative;
 
     &:hover::after,
